@@ -1,0 +1,189 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.engineyard.com/accounts?name=nqtien310
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - application/vnd.engineyard.v3+json
+      X-Ey-Token:
+      - ddded641ce395aac73a6c829e0cf63b52a15c074
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 21 Jun 2017 05:58:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Identity:
+      - user 54252
+      Cache-Control:
+      - no-cache
+      Link:
+      - <https://api.engineyard.com/accounts?generation=1498024730&name=nqtien310&page=1&per_page=20>;
+        rel="last"
+      X-Total-Count:
+      - '1'
+      X-Request-Id:
+      - 47242fc0-8ec7-40fb-aa8b-8aeca9da47b1
+      X-Runtime:
+      - '0.379747'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ey-Host:
+      - ip-10-67-147-238
+    body:
+      encoding: ASCII-8BIT
+      string: '{"accounts":[{"id":"28b9ef37-bfed-4603-9573-6a177bae8916","account_notes":"https://api.engineyard.com/accounts-notes.28b9ef37-bfed-4603-9573-6a177bae8916","account_trial":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/trial","addons":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/addons","addresses":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/addresses","applications":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/applications","billable":false,"billing_required":true,"billing_signup_url":"https://billing.engineyard.com/signup?code=tuuk%2FXGoaPyKp6DWYh7QNZB8ChuXY%2FGV3xg0CwB7ES2ynEVKXzMuAcwHpuA6-k%2FsHlcjLzQBZess5GdrFnX1sSzJaZaXlKI%2Fp8I8Xh6prR5zJn5K7rJybo3n9-iXB0kLhLOj2glYZmT5Zr%2F8mLvXcmfGQHWJc3%2FpViE2oJpC9qp2NHqB0SLsw3-pp8VrPsJV8KVI%2F5OY2TlbeVp4BhkSFHSaVnudZcJuPDvSBU34gH%2FBNQvvG%2BW-X%2FaZF1TD2tbXF%2BL3UsnbmJJsqRBBEHqvLLs2QGB116PK4%2FYTA%2FGJhgRX4D%2Bo-2isRV8QM7MkvZbFDA8XTUKM4zFdPx6GspNy2cIywap9IyMk8szJ9F%2FUeqXx7-VLwVHNvOL%2B9uwWFObrL0hgLpgSgczHpTuIFROx6wbSV93g%3D%3D","canceled_at":null,"cancellation":null,"cancelled_at":null,"created_at":"2017-06-19T10:23:29+00:00","database_services":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/database-services","emergency_contact":null,"environments":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/environments","features":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/features","finalized":true,"logical_databases":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/logical-databases","memberships":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/memberships","name":"nqtien310","owners":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/owners","plan":null,"providers":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/providers","rds_management_web_uri":"https://cloud.engineyard.com/accounts/43078/database_services","referrals":null,"referrer_account":null,"requests":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/requests","server_alerts":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/server-alerts","signup_via":"classic","ssl_certificates":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/ssl-certificates","support_plan":"standard","support_trial":null,"support_trial_status":"NA","updated_at":"2017-06-20T04:52:07+00:00","users":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/users","type":"trial"}]}'
+    http_version: 
+  recorded_at: Wed, 21 Jun 2017 05:58:43 GMT
+- request:
+    method: post
+    uri: https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916/environments
+    body:
+      encoding: UTF-8
+      string: '{"account":"28b9ef37-bfed-4603-9573-6a177bae8916","environment":{"name":"testeyromapi_1498024722","application_id":52876,"region":"us-east-1","stack_name":"nginx_unicorn","database_stack":"postgres9_4","release_label":null,"language":"Ruby
+        2.0.0"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.12.1
+      Content-Type:
+      - application/json
+      Accept:
+      - application/vnd.engineyard.v3+json
+      X-Ey-Token:
+      - ddded641ce395aac73a6c829e0cf63b52a15c074
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 21 Jun 2017 05:58:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3807'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Identity:
+      - user 54252
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - request_method=POST; path=/; secure
+      X-Request-Id:
+      - 103ee45c-ee8f-467b-8ae5-4ccddf85c7d7
+      X-Runtime:
+      - '0.715167'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ey-Host:
+      - ip-10-0-3-51
+    body:
+      encoding: UTF-8
+      string: '{"environment":{"id":120420,"account":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916","alerts":"https://api.engineyard.com/environments/120420/server-alerts","applications":"https://api.engineyard.com/environments/120420/applications","classic":true,"created_at":"2017-06-21T05:58:52+00:00","database_services":"https://api.engineyard.com/environments/120420/database-services","deleted_at":null,"firewall":null,"internal_private_key":"-----BEGIN
+        RSA PRIVATE KEY-----\nMIIEpQIBAAKCAQEAwDeHgZt/qDYofuvUdoobclcrlVFuawO0lYun0P1TxcGjxk63\nENwZQHjp2wV7dScWMk3AQlwxeSkFWbhDd5M2ts2TxcsrWauOpo5IGWZC5Muuerff\njUDDRyX0FrQVJ+f9mlH3d+l6fjbXblVsT4AzIMmbppVnDiSR0I3HdGQIHpyj9IV9\nFgxuNeacbuclWPM27dLSG56P8cmGrSFpKxreeNYkux0NsGT1XBFekmwPXqF5/qlR\nBy3vDwENRkwCq1Oj8Y+1bvJoQ1V3HPLPU46qETa7vdvILEr13TXf4SVlZdjBBEWl\n7szST426geeSI/qX+zq9A92d7O/b0vf+FPNcYwIDAQABAoIBAQC43S8P8bOG3f94\ngetmzlCzWS7rftPJTFkDcrtFfj5xdVjDwrTCHEyU+zU+ljk0ZREt9CUyLWTPeCpT\nLaqFeCopCfJTSqE4royVl0W0V+uCDHqUP/9a5Kxq4w+sPioSpUX8g1SUGRLcDHaJ\nANMYat3BbOSsBAiHS5iJkbIAOKyucqFsZfcDwhOQnGM/kHRGHQAjQFcCFB8lgETs\nLhQVBNJCaURnhBxUoPTIrYXB16CQj5LpAuHPdZ9VYXBU3dCdyzsCJHdxYYgckDl4\nZPyCkNmf91bbjQrnBcURK5shWf1zsb0wqoMrxD0IbXfHdqXnO6LsKNnkcvrmblPU\nKaGsA8RBAoGBAOB6u7C3Rq+tSwuWEvpgi/y0VXuU+gPqWtv0Z3/ShkexhD7N8fmg\nEVn1es6YbvIKlhNWIxKl14c36Ssu2hmde40hJFGEOELtLqYO+VwSCPeuQChoCd5x\ny0hCg7Do8xL3XoGcImyPAHoOUJKh9/K5CclC6x/Myx8vKWpUa6aEN3CxAoGBANs1\nEbbzX05woOD/etKGBksUOhgCPVA+kwpcgBs5wfWipV4zxbXsBvvrzEEi2bqGrOQF\nHM1i5C7q3rSqdvLki/r6kHlYpz7TlEzCTkSjosbclBylD7Y6SfOUw2+NcjcVEdZy\nRLEoE3euM0kLt8dkXvTRdglHn6UeB3OatpdPE8NTAoGBANsNybRT1Q2/7LictV5Q\n8qoiDDzxjtxdSFbV9F3ewZyalPN4owW2dtgzXajXRYS6YeLyrn0XCvBv1gCG0twm\nOpfo3HkTrpdYvqnbeOiozMlt6DvF8sN4hie4iKwNVo6OiFGwXENVdOCmsWe12LCq\ncutMewdoIFsI+cBCK16uLS+xAoGAdt7Ra2eQkEXNSBXisdUSBpbCZhCY1TIJpL3C\njoEEqEJ58JqcpWmH5AbbbZsLfPXZPZF0LABrgvHEsS4bcN309rX3sIYds5kiu3lG\n3jvqYnJtMxdjbMsxHRDX5l9Kx4n6cVLn4zW7UNQ7ZWogT9UjFRmdK60WaoDdQ5hr\nWaP9MJcCgYEAl/ifU5zh6JLZ8WIhw5+tfQ5SOXF8pbrGlrNhHGdlahXSQ4j/krXH\nN5dvnW1bQx5FLADMUKxaTxp0pFO8KBIKTf9uPLjj+CKdy7PxmoT3onkdWJMHOrO8\nWjIw5F9jAtWnsbFioTEzwo37JrVkMkEpIKBGpEfFn7rIACVzB+N+OAc=\n-----END
+        RSA PRIVATE KEY-----\n","internal_public_key":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAN4eBm3+oNih+69R2ihtyVyuVUW5rA7SVi6fQ/VPFwaPGTrcQ3BlAeOnbBXt1JxYyTcBCXDF5KQVZuEN3kza2zZPFyytZq46mjkgZZkLky656t9+NQMNHJfQWtBUn5/2aUfd36Xp+NtduVWxPgDMgyZumlWcOJJHQjcd0ZAgenKP0hX0WDG415pxu5yVY8zbt0tIbno/xyYatIWkrGt541iS7HQ2wZPVcEV6SbA9eoXn+qVEHLe8PAQ1GTAKrU6Pxj7Vu8mhDVXcc8s9TjqoRNru928gsSvXdNd/hJWVl2MEERaXuzNJPjbqB55Ij+pf7Or0D3Z3s79vS9/4U81xj
+        \n","keypairs":"https://api.engineyard.com/environments/120420/keypairs","logical_databases":"https://api.engineyard.com/environments/120420/logical-databases","monitor_url":null,"name":"testeyromapi_1498024722","server_alerts":"https://api.engineyard.com/environments/120420/server-alerts","servers":"https://api.engineyard.com/environments/120420/servers","service_level":"default","service_plan":null,"snapshots":"https://api.engineyard.com/environments/120420/snapshots","updated_at":"2017-06-21T05:58:52+00:00","available_upgrade_web_uri":null,"custom_recipes":null,"database_stack":"postgres9_4","deploy_method":"serverside","deployments":"https://api.engineyard.com/environments/120420/deployments","framework_env":"production","kubey_cluster":"https://api.engineyard.com/environments/120420/kubey_cluster","kubey_logical_database_count":null,"kubey_master_count":0,"kubey_node_count":0,"language":"Ruby
+        2.0.0","lock_db_version":true,"network":null,"region":"us-east-1","release_label":"stable-v5-3.0.28","requests":"https://api.engineyard.com/environments/120420/requests","stack_name":"nginx_unicorn","takeover_preference":"snapshot","upgrade_available":false,"username":"deploy","vpc_name":null,"vpc_provisioned_id":null}}'
+    http_version: 
+  recorded_at: Wed, 21 Jun 2017 05:58:46 GMT
+- request:
+    method: post
+    uri: https://api.engineyard.com/environments/120420/boot
+    body:
+      encoding: UTF-8
+      string: '{"cluster_configuration":{"configuration":{"type":"solo"}}}'
+    headers:
+      User-Agent:
+      - Faraday v0.12.1
+      Content-Type:
+      - application/json
+      Accept:
+      - application/vnd.engineyard.v3+json
+      X-Ey-Token:
+      - ddded641ce395aac73a6c829e0cf63b52a15c074
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 21 Jun 2017 21:44:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Identity:
+      - user 54252
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - request_method=POST; path=/; secure
+      X-Request-Id:
+      - ce8219de-1927-4101-bc29-85583f2dd7f5
+      X-Runtime:
+      - '2.787591'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Ey-Host:
+      - ip-10-149-82-94
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"start_environment","id":"8894e841-f4af-403d-bffb-feaa8aeebb92","created_at":"2017-06-21T21:44:33+00:00","started_at":null,"finished_at":null,"message":null,"request_status":"In-Progress:
+        Start environment (8894e841-f4af-403d-bffb-feaa8aeebb92). Progress: 0%","successful":null,"updated_at":"2017-06-21T21:44:33+00:00","read_channel":null,"stage":null,"dependencies":"https://api.engineyard.com/requests/8894e841-f4af-403d-bffb-feaa8aeebb92/dependencies","stages":"https://api.engineyard.com/requests/8894e841-f4af-403d-bffb-feaa8aeebb92/stages","account":"https://api.engineyard.com/accounts/28b9ef37-bfed-4603-9573-6a177bae8916","requester":"https://api.engineyard.com/requests/8894e841-f4af-403d-bffb-feaa8aeebb92/requester","messages":"https://api.engineyard.com/requests/8894e841-f4af-403d-bffb-feaa8aeebb92/messages","callback_url":"https://api.engineyard.com/requests/8894e841-f4af-403d-bffb-feaa8aeebb92/callback","progress":false,"resource":"https://api.engineyard.com/environments/120420"}}'
+    http_version: 
+  recorded_at: Wed, 21 Jun 2017 21:44:27 GMT
+recorded_with: VCR 3.0.3

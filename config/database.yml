@@ -19,3 +19,7 @@ development:
 production:
   <<: *default
   database: testey_production
+
+test:
+  <<: *default
+  database: testey_test
